@@ -18,10 +18,22 @@ const ContactDet = () => {
        gap:"30px",
        
     }
+    const add_con={
+      display:"flex",
+    flexWrap:"wrap",
+     gap:"36px",
+     
+  }
     const cont_text={
         fontSize:"19px",
         color:"var(--darkblue)"
     }
+    const phone_text={
+      fontSize:"19px",
+      color:"var(--darkblue)",
+      position:"relative",
+      right:"5px"
+  }
   return (
     <Container>
     <div className="con-det" style={{display:"flex",justifyContent:"center",flexWrap:"wrap",margin:"6rem 0"}}>
@@ -36,9 +48,9 @@ const ContactDet = () => {
         </div>
    <div className="phone-det det" style={con}>
     <img src={phone} alt="" style={img_style} />
-    <p style={cont_text}>+41 76 496 43 67</p>
+    <p style={phone_text} >+41 76 496 43 67</p>
    </div>
-   <div className="add-det det" style={con}>
+   <div className="add-det det" style={add_con}>
     <img src={address} alt="" style={{
               width:"20.3px", 
               height: "27px",
@@ -49,6 +61,7 @@ const ContactDet = () => {
     position:"relative",
   bottom: "23px",
   zIndex:"-99",
+
   
   }} >Seestrasse 65 <br />
     5712 Beinwil am See  <br />
